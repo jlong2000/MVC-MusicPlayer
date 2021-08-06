@@ -40,7 +40,8 @@ extension AppCoordinator: AlbumListViewControllerDelegate {
 extension AppCoordinator: TrackListViewControllerDelegate {
 
   func didSelectTrack(for album: Album, track: Track) {
-
+    let trackDetailVC = TrackDetailViewController(album: album, track: track)
+    navigationController.pushViewController(trackDetailVC, animated: true)
   }
 
 }

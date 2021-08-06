@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848184BE26BD9122005A6689 /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848184BD26BD9122005A6689 /* TrackDetailViewController.swift */; };
+		848184C126BD93D3005A6689 /* PlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848184C026BD93D3005A6689 /* PlayerControls.swift */; };
+		848184C726BD9755005A6689 /* PlayerTrackDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848184C626BD9755005A6689 /* PlayerTrackDuration.swift */; };
+		848184CA26BDA460005A6689 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848184C926BDA460005A6689 /* PlayerManager.swift */; };
 		8497988926BD267D001F684A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497988826BD267D001F684A /* AppDelegate.swift */; };
 		8497988B26BD267D001F684A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497988A26BD267D001F684A /* SceneDelegate.swift */; };
 		8497989226BD268C001F684A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8497989126BD268C001F684A /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848184BD26BD9122005A6689 /* TrackDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewController.swift; sourceTree = "<group>"; };
+		848184C026BD93D3005A6689 /* PlayerControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControls.swift; sourceTree = "<group>"; };
+		848184C626BD9755005A6689 /* PlayerTrackDuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTrackDuration.swift; sourceTree = "<group>"; };
+		848184C926BDA460005A6689 /* PlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
 		8497988526BD267D001F684A /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8497988826BD267D001F684A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8497988A26BD267D001F684A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				8497990526BD6E65001F684A /* Cell */,
+				848184C026BD93D3005A6689 /* PlayerControls.swift */,
+				848184C626BD9755005A6689 /* PlayerTrackDuration.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +162,7 @@
 				8497991426BD86A7001F684A /* AppCoordinator.swift */,
 				849798E226BD2E1A001F684A /* AlbumListViewController.swift */,
 				8497990E26BD7AB6001F684A /* TrackListViewController.swift */,
+				848184BD26BD9122005A6689 /* TrackDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				8497990126BD4BA5001F684A /* AlbumManager.swift */,
+				848184C926BDA460005A6689 /* PlayerManager.swift */,
 				849798EF26BD3898001F684A /* TrackManager.swift */,
 			);
 			path = Managers;
@@ -250,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848184C126BD93D3005A6689 /* PlayerControls.swift in Sources */,
 				8497990726BD6E8C001F684A /* AlbumCollectionViewCell.swift in Sources */,
 				8497990226BD4BA5001F684A /* AlbumManager.swift in Sources */,
 				849798F326BD391A001F684A /* TimeInterval.swift in Sources */,
+				848184C726BD9755005A6689 /* PlayerTrackDuration.swift in Sources */,
 				849798E326BD2E1A001F684A /* AlbumListViewController.swift in Sources */,
 				849798F026BD3898001F684A /* TrackManager.swift in Sources */,
 				8497991226BD7B5E001F684A /* TrackTableViewCell.swift in Sources */,
@@ -261,6 +275,8 @@
 				8497991526BD86A7001F684A /* AppCoordinator.swift in Sources */,
 				8497988B26BD267D001F684A /* SceneDelegate.swift in Sources */,
 				8497990F26BD7AB6001F684A /* TrackListViewController.swift in Sources */,
+				848184BE26BD9122005A6689 /* TrackDetailViewController.swift in Sources */,
+				848184CA26BDA460005A6689 /* PlayerManager.swift in Sources */,
 				849798F626BD398F001F684A /* String.swift in Sources */,
 				849798FA26BD39D5001F684A /* Date.swift in Sources */,
 				849798FE26BD45CA001F684A /* Album.swift in Sources */,

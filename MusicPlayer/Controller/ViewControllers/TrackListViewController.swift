@@ -54,6 +54,7 @@ class TrackListViewController: UIViewController {
   private func setupUI() {
 
     title = album.albumName
+    navigationItem.backButtonTitle = "Back"
     view.addSubview(tableView)
 
     NSLayoutConstraint.activate([
