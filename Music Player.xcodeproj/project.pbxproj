@@ -22,6 +22,8 @@
 		8497990226BD4BA5001F684A /* AlbumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497990126BD4BA5001F684A /* AlbumManager.swift */; };
 		8497990726BD6E8C001F684A /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497990626BD6E8C001F684A /* AlbumCollectionViewCell.swift */; };
 		8497990B26BD7382001F684A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8497990A26BD7382001F684A /* Kingfisher */; };
+		8497990F26BD7AB6001F684A /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497990E26BD7AB6001F684A /* TrackListViewController.swift */; };
+		8497991226BD7B5E001F684A /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497991126BD7B5E001F684A /* TrackTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		849798FD26BD45CA001F684A /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		8497990126BD4BA5001F684A /* AlbumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
 		8497990626BD6E8C001F684A /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		8497990E26BD7AB6001F684A /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		8497991126BD7B5E001F684A /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				849798E226BD2E1A001F684A /* AlbumListViewController.swift */,
+				8497990E26BD7AB6001F684A /* TrackListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8497990626BD6E8C001F684A /* AlbumCollectionViewCell.swift */,
+				8497991126BD7B5E001F684A /* TrackTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -246,9 +252,11 @@
 				849798F326BD391A001F684A /* TimeInterval.swift in Sources */,
 				849798E326BD2E1A001F684A /* AlbumListViewController.swift in Sources */,
 				849798F026BD3898001F684A /* TrackManager.swift in Sources */,
+				8497991226BD7B5E001F684A /* TrackTableViewCell.swift in Sources */,
 				849798EA26BD370E001F684A /* Track.swift in Sources */,
 				8497988926BD267D001F684A /* AppDelegate.swift in Sources */,
 				8497988B26BD267D001F684A /* SceneDelegate.swift in Sources */,
+				8497990F26BD7AB6001F684A /* TrackListViewController.swift in Sources */,
 				849798F626BD398F001F684A /* String.swift in Sources */,
 				849798FA26BD39D5001F684A /* Date.swift in Sources */,
 				849798FE26BD45CA001F684A /* Album.swift in Sources */,
