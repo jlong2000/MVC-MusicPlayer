@@ -14,6 +14,11 @@
 		849798DF26BD2DAE001F684A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798DE26BD2DAE001F684A /* BaseViewController.swift */; };
 		849798E326BD2E1A001F684A /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798E226BD2E1A001F684A /* AlbumListViewController.swift */; };
 		849798E626BD33EA001F684A /* Tracks.json in Resources */ = {isa = PBXBuildFile; fileRef = 849798E526BD33EA001F684A /* Tracks.json */; };
+		849798EA26BD370E001F684A /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798E926BD370E001F684A /* Track.swift */; };
+		849798F026BD3898001F684A /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798EF26BD3898001F684A /* TrackManager.swift */; };
+		849798F326BD391A001F684A /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798F226BD391A001F684A /* TimeInterval.swift */; };
+		849798F626BD398F001F684A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798F526BD398F001F684A /* String.swift */; };
+		849798FA26BD39D5001F684A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849798F926BD39D5001F684A /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		849798DE26BD2DAE001F684A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		849798E226BD2E1A001F684A /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
 		849798E526BD33EA001F684A /* Tracks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tracks.json; sourceTree = "<group>"; };
+		849798E926BD370E001F684A /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		849798EF26BD3898001F684A /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
+		849798F226BD391A001F684A /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		849798F526BD398F001F684A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		849798F926BD39D5001F684A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +71,8 @@
 				849798A226BD291F001F684A /* Model */,
 				849798A326BD292D001F684A /* View */,
 				849798A426BD2934001F684A /* Controller */,
-				849798A526BD2944001F684A /* Utilities */,
+				849798ED26BD3882001F684A /* Managers */,
+				849798A526BD2944001F684A /* Extensions */,
 				849798D926BD2CE9001F684A /* Resource */,
 				8497989326BD268C001F684A /* LaunchScreen.storyboard */,
 				8497989626BD268C001F684A /* Info.plist */,
@@ -72,6 +83,7 @@
 		849798A226BD291F001F684A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				849798E926BD370E001F684A /* Track.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,11 +104,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		849798A526BD2944001F684A /* Utilities */ = {
+		849798A526BD2944001F684A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				849798F926BD39D5001F684A /* Date.swift */,
+				849798F526BD398F001F684A /* String.swift */,
+				849798F226BD391A001F684A /* TimeInterval.swift */,
 			);
-			path = Utilities;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		849798D926BD2CE9001F684A /* Resource */ = {
@@ -120,10 +135,26 @@
 		849798DC26BD2D74001F684A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				849798DE26BD2DAE001F684A /* BaseViewController.swift */,
+				849798E826BD3682001F684A /* Base */,
 				849798E226BD2E1A001F684A /* AlbumListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		849798E826BD3682001F684A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				849798DE26BD2DAE001F684A /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		849798ED26BD3882001F684A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				849798EF26BD3898001F684A /* TrackManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,9 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849798F326BD391A001F684A /* TimeInterval.swift in Sources */,
 				849798E326BD2E1A001F684A /* AlbumListViewController.swift in Sources */,
+				849798F026BD3898001F684A /* TrackManager.swift in Sources */,
+				849798EA26BD370E001F684A /* Track.swift in Sources */,
 				8497988926BD267D001F684A /* AppDelegate.swift in Sources */,
 				8497988B26BD267D001F684A /* SceneDelegate.swift in Sources */,
+				849798F626BD398F001F684A /* String.swift in Sources */,
+				849798FA26BD39D5001F684A /* Date.swift in Sources */,
 				849798DF26BD2DAE001F684A /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
