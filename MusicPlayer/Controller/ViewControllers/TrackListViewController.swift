@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol TrackListViewControllerDelegate: AnyObject {
+  func didSelectTrack(for album: Album, track: Track)
+}
+
 class TrackListViewController: UIViewController {
+
+  weak var delegate: TrackListViewControllerDelegate?
 
   // MARK: - Private Variable
 
@@ -78,5 +84,7 @@ extension TrackListViewController: UITableViewDataSource, UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+
+    delegate?.didSelectTrack(for: album, track: album.tracks[indexPath.row])
   }
 }
